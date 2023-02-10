@@ -1,0 +1,18 @@
+<%- include("partials/header")%>
+    <div class="main_r">
+        <div class="colore1"></div>
+        <div class="colore2"></div>
+        <div class="main_box_right">
+           <h1 class="h11">Signup</h1>
+           <form class="f_r" action="/signup" method="post">
+                <input class="r1" type="text" name="name" placeholder="Name" />
+                <input class="r1" type="text" name="username" placeholder="UsernName" />
+                <input class="r1" type="email" name="email" placeholder="Rohit@example.com" />
+                <input class="r1" type="password" name="password" placeholder="Password" />
+                <button class="btn1">signup</button>
+            </form>
+            <a href="/"><button class="btn2">Back</button></a>
+        </div>
+    </div>
+
+    <%- include("partials/footer")%>

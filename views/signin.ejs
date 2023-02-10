@@ -1,0 +1,18 @@
+<%- include("partials/header")%>
+
+<div class="main_r3">
+    <div class="colore13"></div>
+    <div class="colore23"></div>
+    <div class="main_box_right3">
+       <h1 class="h113">Signin</h1>
+       <form class="f_r3" action="/signin" method="post">
+            <input class="r13" type="text" name="email" placeholder="Rohit@example.com" />
+            <input class="r13" type="password" name="password" placeholder="Password" />
+            <button class="btn13">Signin</button>
+        </form>
+        <a href="/forget-password"><button class="btn23">Forget Password </button></a>
+        <h2 class="backpage3">Don't have an account? <a href="/signup">Signup</a></h2>
+    </div>
+</div>
+
+<%- include("partials/footer")%>

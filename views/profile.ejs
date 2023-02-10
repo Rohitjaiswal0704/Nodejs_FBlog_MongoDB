@@ -1,0 +1,25 @@
+<%- include("partials/header")%>
+
+<div class="profile_main">
+    <a class="backbtn1" href="/"><img src="https://img.icons8.com/ios-filled/25/null/less-than.png"/>Back</a>
+      <h1>Update Profile</h1>
+      <div class="profile_box">
+            
+            <div class="profile_box_left1">
+              <form action="/profile" method="post" enctype="multipart/form-data">
+                 <img class="profilr_image" width="380"  height="380" src="/uploads/<%= user.avatar%>" alt="">
+            </div>
+          
+            <div class="profile_box_right">
+                 <textarea class="profile_text" name="about" cols="30" rows="10" placeholder="Enter text here" ><%= user.about%></textarea>
+                 <input class="profile_file" type="file" name="avatar">
+                 <input class="file_hidden" type="hidden" name="oldavatar" value="<%= user.avatar%>">
+                 <button class="save_profile">Save Profile</button>
+            </div>
+          </form>
+      
+      </div>
+  
+  </div>
+
+<%- include("partials/footer")%>

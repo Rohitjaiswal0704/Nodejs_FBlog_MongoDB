@@ -1,0 +1,71 @@
+<%- include("partials/header")%>
+<style>
+  .m5500 {
+    width: 100vw;
+    max-height: 0vh;
+    padding-top: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .m5501 {
+    padding-top: 0vw;
+    width: 45vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  background-color: rgb(238, 238, 230);
+  }
+  .h5502{
+    width: 45vw;
+    height: 11vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border-radius: 10vw;
+    font-family: gilroy;
+    font-size: 2vw;
+    gap: 2vw;
+    background-color: rgb(166, 223, 204);
+  }
+  .h5502>img{
+    width: 4vw;
+    height: 8vh;
+    margin-left: 3vw;
+    border-radius: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .h5504{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.3vw;
+    overflow: hidden;
+    font-family: gilroy;
+  }
+  
+</style>
+
+<div class="m5500">
+  <% lists.forEach(elem => { %>
+  <!-- <%= JSON.stringify(elem.blog)%> -->
+  <div class="m5501">
+    <h3 class="h5502">
+      <img height="50" src="/uploads/<%= user.avatar%>" alt="" />
+      <%= user.name%>
+    </h3>
+    <div class="h5504" ><%- elem.blog%></div>
+  </div>
+  <% }) %>
+</div>
+
+<!--  -->
+<%- include("partials/footer")%>

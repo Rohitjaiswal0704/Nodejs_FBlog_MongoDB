@@ -1,0 +1,35 @@
+<%- include("partials/header")%>
+
+<% if(isLoggedIn){%>
+<!--  -->
+<%- include("partials/navlogin")%>
+
+<!--  -->
+
+ <% blogs.forEach(elem => { %>
+<!-- <%= JSON.stringify(elem.blog)%> -->
+
+       <h5 class="m2001">
+        <img class="m2003" height="30" src="/uploads/<%= elem.author.avatar%>" alt="" />
+         <%= elem.author.name%>
+       </h5>
+       <div class="blog"><%- elem.blog%></div>
+    <% }) %>
+
+
+<!--  -->
+<% } else {%>
+<!--  -->
+<%- include("partials/nav")%>
+<!--  -->
+<% }%>
+
+<%- include("partials/footer")%>
+
+
+<style>
+    .m2001{
+     width: 100vw;
+     max-height: 100vw;
+    }
+ </style>

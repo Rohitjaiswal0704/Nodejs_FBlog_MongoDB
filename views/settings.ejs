@@ -1,0 +1,40 @@
+<%- include("partials/header")%>
+
+<div class="profile_main1">
+    <a class="backbtn2" href="/"><img src="https://img.icons8.com/ios-filled/25/null/less-than.png"/>Back</a>
+      <div class="profile_box1">
+        <h1>Settings</h1>
+  
+        <form class="from21" action="/settings" method="post">
+          <form class="from22" action="/settings" method="post">
+            <input class="in1" type="text" name="name" placeholder="Name"  value="<%= user.name%>"  />
+            <br>
+            <input class="in1 in2" type="text" name="username" placeholder="Username" value="<%= user.username%>"  />
+            <br>
+            <input class="in1 in3" type="email" name="email" placeholder="Email" value="<%= user.email%>" />
+            <br>
+            <div class="profile_info" >
+              <div class="profile_info_box1">
+                <label class="lab"  for="">Profile Information</label>
+                <span class="lab_e">Edit Bio, About, Avatar</span>
+              </div>
+             
+              <div>
+                <a href="/profile"><img class="profile_image" src="/uploads/<%= user.avatar %>" alt=""></a>
+              </div>  
+            </div>
+  
+            <button class="savebtn1">Save Information</button>
+          
+  
+          </form>
+          <a class="deletebtn1" href="/delete">Delete</a>
+          <a class="deletebtn2" href="/reset-password">Reset Password</a>
+        </form>
+  
+      </div>
+  
+  </div>
+  
+
+<%- include("partials/footer")%>

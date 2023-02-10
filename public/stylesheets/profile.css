@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.profile_main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e7f1e6;
+}
+.profile_main>h1{
+    font-family: gilroy;
+    font-size: 2.5vw;
+    padding-bottom: 3vw;
+    color: rgb(0, 0, 0);
+}
+.backbtn1{
+    font-family: gilroy;
+    font-size: 1.6vw;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+}
+.profile_box{
+    width: 75vw;
+    height: 60vh;
+    display: flex;
+    border: 0.1vw solid rgb(155, 154, 154);
+    padding: 1vw 1vw;
+    border-radius: 1.5vw;
+    background-color:white;
+}
+.profile_box_left1{
+    width: 30vw;
+    height: 55vh;
+    overflow: hidden;
+    /* border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw; */
+    border-radius: 1vw;
+}
+
+.profilr_image{
+    /* width: 29vw; */
+    /* height: 50vw; */
+    background-position: center;
+    object-fit: fill;
+}
+
+.profile_box_right{
+    width: 45vw;
+    height: 56vh;
+    padding: 0 2vw;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    /* background-color: #EDE98E; */
+}
+
+.profile_text{
+    width: 42vw;
+    height: 34vh;
+    outline: none;
+    padding: 2vw;
+    font-family: gilroy;
+    font-size: 1.4vw;
+    border-radius: 1vw;
+    background-color: #e5e3e5;
+}
+
+.profile_file{
+    font-family: gilroy;
+    font-size: 1.1vw;
+    margin-top: 3vw;
+}
+
+.save_profile{
+    width: 12vw;
+    height: 5.5vh;
+    border: none;
+    border-radius: 2vw;
+    font-family: gilroy;
+    font-size: 1.05vw;
+    background: linear-gradient(80deg,#15a0bb, #6062e0 ,#d304d6);
+    color: white;
+    cursor: pointer;
+}
